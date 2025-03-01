@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  experimental: {
+  },
+  transpilePackages: ['@shopify/polaris'], // Move to root level
 };
 
 export default nextConfig;
